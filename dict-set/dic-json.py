@@ -1,5 +1,6 @@
-import requests #module 
+import requests # type: ignore #module 
 
 response = requests.get("https://api.github.com/repos/kubernetes/kubernetes/pulls")
-
-print (response.json())
+output =response.json()
+for i in range(len(output)):
+    print (output[i]["user"]["login"])
