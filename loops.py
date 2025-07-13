@@ -49,3 +49,6 @@ print(list(range(len(l))))
 
 for idx in range(len(l)):
     print(l[idx])
+
+
+    
